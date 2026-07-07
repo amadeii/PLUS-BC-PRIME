@@ -1,0 +1,118 @@
+/* ========= MODAL PREMIUM GLOBAL ========= */
+
+.modal.fade .modal-dialog{
+    transform:scale(.96) translateY(10px);
+    transition:.18s ease;
+}
+
+.modal.show .modal-dialog{
+    transform:scale(1) translateY(0);
+}
+
+.modal-content{
+    border:none;
+    border-radius:26px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 30px 90px rgba(15,23,42,.18);
+}
+
+.modal-header{
+    border:none;
+    padding:22px 24px 18px;
+    position:relative;
+    background:linear-gradient(180deg,#fcfcff 0%,#f6f8fd 100%);
+}
+
+.modal-header::after{
+    content:"";
+    position:absolute;
+    left:24px;
+    right:24px;
+    bottom:0;
+    height:1px;
+    background:#edf1f7;
+}
+
+.modal-title{
+    font-size:22px;
+    font-weight:800;
+    color:#1f2937;
+    letter-spacing:-.4px;
+}
+
+.modal-body{
+    padding:24px;
+    background:#fff;
+}
+
+.modal-footer{
+    border:none;
+    padding:18px 24px 24px;
+    background:#fff;
+    position:relative;
+}
+
+.modal-footer::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:24px;
+    right:24px;
+    height:1px;
+    background:#edf1f7;
+}
+
+.modal .btn-close{
+    width:38px;
+    height:38px;
+    min-width:38px;
+    border-radius:14px;
+    background-color:#f3f5fb;
+    opacity:1;
+    transition:.2s ease;
+}
+
+.modal .btn-close:hover{
+    background-color:#e8ecf5;
+    transform:rotate(90deg);
+}
+
+.modal-backdrop.show{
+    opacity:.72;
+    backdrop-filter:blur(5px);
+}
+
+/* ========= DARK ========= */
+
+[data-bs-theme="dark"] .modal-content{
+    background:#161b26;
+    box-shadow:0 35px 100px rgba(0,0,0,.55);
+}
+
+[data-bs-theme="dark"] .modal-header{
+    background:linear-gradient(180deg,#1c2331 0%,#181e2a 100%);
+}
+
+[data-bs-theme="dark"] .modal-header::after,
+[data-bs-theme="dark"] .modal-footer::before{
+    background:#2b3447;
+}
+
+[data-bs-theme="dark"] .modal-body,
+[data-bs-theme="dark"] .modal-footer{
+    background:#161b26;
+}
+
+[data-bs-theme="dark"] .modal-title{
+    color:#eef2ff;
+}
+
+[data-bs-theme="dark"] .modal .btn-close{
+    background-color:#283042;
+    filter:invert(1);
+}
+
+[data-bs-theme="dark"] .modal .btn-close:hover{
+    background-color:#313b50;
+}

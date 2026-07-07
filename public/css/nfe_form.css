@@ -1,0 +1,172 @@
+ .resumo-valores{
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.item-resumo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.item-resumo span{
+    font-size: 13px;
+    color: #667085;
+    font-weight: 500;
+}
+
+.item-resumo strong{
+    font-size: 13px;
+    color: #49526B;
+    font-weight: 600;
+}
+
+.item-resumo:first-child strong{
+    color: #49526B;
+    font-size: 15px;
+}
+.item-resumo + .item-resumo{
+    border-top: 1px dashed #eee;
+    margin-top: 6px;
+    padding-top: 10px;
+}
+
+.resumo-financeiro .card-resumo{
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: all 0.2s ease;
+}
+
+.resumo-financeiro .card-resumo:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.card-resumo span{
+    display: block;
+    font-size: 12px;
+    color: #667085;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.card-resumo strong{
+    font-size: 18px;
+    font-weight: 700;
+    color: #101828;
+}
+
+.card-resumo.destaque{
+    border: 1px solid rgba(21,152,146,.25);
+    background: linear-gradient(135deg, rgba(21,152,146,.08), rgba(21,152,146,.18));
+    box-shadow: 0 4px 15px rgba(21,152,146,.10);
+}
+
+.card-resumo.destaque strong{
+    color: #159892;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fatura-total-box{
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:15px 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.fatura-total-label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:14px;
+    font-weight:600;
+    color:#64748b;
+}
+
+.fatura-total-label i{
+    width:36px;
+    height:36px;
+    border-radius:10px;
+    background:#f3f0ff;
+    color:var(--main-color,#8448dc);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+}
+
+.fatura-total-valor{
+    font-size:24px;
+    font-weight:700;
+    color:var(--main-color,#8448dc);
+}
+
+.info-destaque{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 14px;
+    border-radius:12px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.info-destaque i{
+    font-size:14px;
+}
+
+.info-reserva{
+    background:rgba(59,130,246,.12);
+    color:#2563eb;
+    border:1px solid rgba(59,130,246,.2);
+}
+
+.info-orcamento{
+    background:rgba(16,185,129,.12);
+    color:#059669;
+    border:1px solid rgba(16,185,129,.2);
+}
+
+.info-vendizap{
+    background:rgba(139,92,246,.12);
+    color:#7c3aed;
+    border:1px solid rgba(139,92,246,.2);
+}
+
+.info-nuvemshop{
+    background:rgba(249,115,22,.12);
+    color:#ea580c;
+    border:1px solid rgba(249,115,22,.2);
+}
+
+[data-theme="dark"] .info-reserva{
+    background:rgba(59,130,246,.18);
+    color:#93c5fd;
+}
+
+[data-theme="dark"] .info-orcamento{
+    background:rgba(16,185,129,.18);
+    color:#6ee7b7;
+}
+
+[data-theme="dark"] .info-vendizap{
+    background:rgba(139,92,246,.18);
+    color:#c4b5fd;
+}
+
+[data-theme="dark"] .info-nuvemshop{
+    background:rgba(249,115,22,.18);
+    color:#fdba74;
+}

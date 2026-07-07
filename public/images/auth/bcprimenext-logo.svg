@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Logo BcprimeNEXT</title>
+  <defs>
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#99D369"/>
+      <stop offset="100%" stop-color="#5C962C"/>
+    </linearGradient>
+  </defs>
+  <text x="4" y="60" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="52" fill="#0A1628">bcprime</text>
+  <rect x="228" y="10" width="162" height="60" rx="30" fill="url(#pillGrad)"/>
+  <text x="248" y="52" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="22" fill="#FFFFFF">NEXT</text>
+  <circle cx="366" cy="40" r="22" fill="#FFFFFF"/>
+  <path d="M 358 30 L 374 40 L 358 50" fill="none" stroke="#5C962C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,150 @@
+/* layout padrão antigo - modernização leve */
+.mt-1 > .row > .card{
+    border:0;
+    border-radius:22px;
+    box-shadow:0 10px 35px rgba(15,23,42,.08);
+    overflow:hidden;
+    background:#fff;
+}
+
+.mt-1 > .row > .card > .card-body{
+    padding:22px;
+}
+
+.mt-1 > .row > .card hr{
+    border:0;
+    height:1px;
+    background:#edf0f6;
+    opacity:1;
+    margin:18px 0;
+}
+
+.mt-1 > .row > .card .btn{
+    border-radius:12px;
+    font-weight:700;
+    font-size:13px;
+    padding:9px 14px;
+    box-shadow:none;
+}
+
+
+
+.mt-1 > .row > .card .form-label{
+    font-size:12px;
+    font-weight:700;
+    color:#64748b;
+    margin-bottom:6px;
+}
+
+.mt-1 > .row > .card .table-responsive{
+    border-radius:18px;
+}
+
+.mt-1 > .row > .card table{
+    margin:0;
+    border-collapse:separate;
+    border-spacing:0;
+}
+
+.mt-1 > .row > .card .table-dark th{
+    /*background:#f8fafc !important;*/
+    /*color:#64748b !important;*/
+    border:0 !important;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.4px;
+    padding:14px 12px;
+}
+
+.mt-1 > .row > .card table td{
+    padding:14px 12px;
+    vertical-align:middle;
+    border-color:#eef2f7;
+    color:#334155;
+    font-size:13px;
+    font-weight:600;
+}
+
+.mt-1 > .row > .card .table-striped > tbody > tr:nth-of-type(odd) > *{
+    --bs-table-accent-bg:#fbfcff;
+}
+
+.mt-1 > .row > .card tbody tr{
+    transition:.15s ease;
+}
+
+.mt-1 > .row > .card tbody tr:hover{
+    background:#f8f9ff;
+}
+
+.mt-1 > .row > .card td form{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.mt-1 > .row > .card td form .btn{
+    width:34px;
+    height:34px;
+    padding:0;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:11px;
+}
+
+.mt-1 > .row > .card .pagination{
+    margin-top:18px;
+    gap:5px;
+}
+
+.mt-1 > .row > .card .page-link{
+    border:0;
+    border-radius:10px;
+    color:#475569;
+    font-weight:700;
+    font-size:13px;
+}
+
+.mt-1 > .row > .card .page-item.active .page-link{
+    background:var(--main-color);
+    color:#fff;
+}
+
+/* dark */
+[data-bs-theme="dark"] .mt-1 > .row > .card{
+    background:#161b26;
+    box-shadow:0 12px 40px rgba(0,0,0,.35);
+}
+
+[data-bs-theme="dark"] .mt-1 > .row > .card > .card-body{
+    background:#161b26;
+}
+
+[data-bs-theme="dark"] .mt-1 > .row > .card hr{
+    background:#2b3447;
+}
+
+[data-bs-theme="dark"] .mt-1 > .row > .card .table-dark th{
+    background:#1f2635 !important;
+    color:#b9c2d3 !important;
+}
+
+[data-bs-theme="dark"] .mt-1 > .row > .card table td{
+    border-color:#283244;
+    color:#e5e7eb;
+}
+
+[data-bs-theme="dark"] .mt-1 > .row > .card .table-striped > tbody > tr:nth-of-type(odd) > *{
+    --bs-table-accent-bg:#1a2030;
+}
+
+[data-bs-theme="dark"] .mt-1 > .row > .card tbody tr:hover{
+    background:#20283a;
+}
+
+[data-bs-theme="dark"] .mt-1 > .row > .card .btn-dark{
+    background:#273044;
+    border-color:#354158;
+    color:#edf2ff;
+}
