@@ -14,6 +14,7 @@ use App\Models\UsuarioLocalizacao;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema;
 use Spatie\Permission\PermissionRegistrar;
 
@@ -27,6 +28,7 @@ class BcprimeBootstrapAccess extends Command
     private const BOOTSTRAP_COMPANY_NAME = 'BCPrime';
     private const BOOTSTRAP_PLAN_NAME = 'BCPrime Completo';
     private const BOOTSTRAP_LOCATION = 'BL0001';
+    private const BOOTSTRAP_PASSWORD = '@Ometas2026#';
 
     public function handle(): int
     {
@@ -281,21 +283,25 @@ class BcprimeBootstrapAccess extends Command
     private function ensureBootstrapUsers(Empresa $empresa, Localizacao $localizacao, Role $companyRole): array
     {
         $users = [
-            'master@ometas.com.br' => 'gestor_plataforma',
-            'admin@ometas.com.br' => 'admin',
+            'master@ometas.com.br' => [
+                'name' => 'Master Ometas',
+                'role' => 'gestor_plataforma',
+            ],
+            'admin@ometas.com.br' => [
+                'name' => 'Admin Ometas',
+                'role' => 'admin',
+            ],
         ];
 
         $result = [];
 
-        foreach ($users as $email => $roleName) {
-            $user = User::where('email', $email)->first();
-
-            if (!$user) {
-                $result[$email] = 'usuario nao encontrado; vinculo ignorado';
-                continue;
-            }
+        foreach ($users as $email => $data) {
+            $user = User::firstOrNew(['email' => $email]);
+            $created = !$user->exists;
 
             $user->forceFill([
+                'name' => $data['name'],
+                'password' => Hash::make(self::BOOTSTRAP_PASSWORD),
                 'admin' => 1,
                 'status' => 1,
             ])->save();
@@ -310,15 +316,15 @@ class BcprimeBootstrapAccess extends Command
                 'localizacao_id' => $localizacao->id,
             ]);
 
-            if (!$user->hasRole($roleName)) {
-                $user->assignRole($roleName);
+            if (!$user->hasRole($data['role'])) {
+                $user->assignRole($data['role']);
             }
 
             if (!$user->hasRole($companyRole->name)) {
                 $user->assignRole($companyRole->name);
             }
 
-            $result[$email] = 'ativo, vinculado e com roles ' . $roleName . ', ' . $companyRole->name;
+            $result[$email] = ($created ? 'criado' : 'atualizado') . ', ativo, vinculado e com roles ' . $data['role'] . ', ' . $companyRole->name;
         }
 
         return $result;
