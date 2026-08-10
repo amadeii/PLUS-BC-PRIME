@@ -25,6 +25,17 @@
 </style>
 @endsection
 
+@php
+    $cidadeOptions = [];
+    $cidadeAusente = false;
+
+    if (isset($item) && $item && $item->cidade_id) {
+        $cidade = $item->cidade;
+        $cidadeOptions[$item->cidade_id] = $cidade ? $cidade->info : 'Cidade não localizada';
+        $cidadeAusente = !$cidade;
+    }
+@endphp
+
 <div class="">
 
     <div class="row">
@@ -221,9 +232,12 @@
                                 <div class="col-md-4 mt-3 cidade">
                                     @isset($item)
                                     {!!Form::select('cidade_id', 'Cidade')
-                                    ->options($item != null ? [$item->cidade_id => $item->cidade->info] : [])
+                                    ->options($cidadeOptions)
                                     ->required()
                                     !!}
+                                    @if($cidadeAusente)
+                                    <small class="text-danger">A cidade cadastrada não foi encontrada. Selecione uma cidade válida antes de salvar.</small>
+                                    @endif
                                     @else
                                     {!!Form::select('cidade_id', 'Cidade')
                                     ->required()

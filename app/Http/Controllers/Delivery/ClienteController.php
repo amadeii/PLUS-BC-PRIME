@@ -15,9 +15,7 @@ use App\Models\FuncionamentoDelivery;
 class ClienteController extends Controller
 {
     public function __construct(){
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
+        // Laravel starts the session through the web middleware.
     }
 
     private function getFuncionamento($config){

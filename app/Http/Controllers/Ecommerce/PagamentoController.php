@@ -22,9 +22,7 @@ class PagamentoController extends Controller
     public function __construct(UploadUtil $util)
     {
         $this->util = $util;
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
+        // Laravel starts the session through the web middleware.
     }
 
     public function index(Request $request){

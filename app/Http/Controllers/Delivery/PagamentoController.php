@@ -33,9 +33,7 @@ class PagamentoController extends Controller
     protected $util;
 
     public function __construct(WhatsAppUtil $util){
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
+        // Laravel starts the session through the web middleware.
         $this->util = $util;
     }
 

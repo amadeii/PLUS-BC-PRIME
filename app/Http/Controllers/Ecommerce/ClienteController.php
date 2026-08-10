@@ -15,9 +15,7 @@ use Illuminate\Support\Str;
 class ClienteController extends Controller
 {
     public function __construct(){
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
+        // Laravel starts the session through the web middleware.
     }
 
     public function cadastro(Request $request){
