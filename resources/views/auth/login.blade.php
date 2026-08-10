@@ -740,7 +740,7 @@
                     <p>Clique nos bot&otilde;es abaixo para acessar os usu&aacute;rios pr&eacute; configurados.</p>
                     <div class="row g-2">
                         <div class="col-12 col-sm-6">
-                            <button class="btn btn-success w-100 btn-sm" type="button" onclick="login('slym@slym.com', '123456')">
+                            <button class="btn btn-success w-100 btn-sm" type="button" onclick="login('bcprime@bcprime.com', '123456')">
                                 SUPERADMIN
                             </button>
                         </div>
