@@ -523,6 +523,74 @@ function __isActivePlan($empresa, $menu){
 	return false;
 }
 
+function __hasProdutos($empresa){
+	return __isActivePlan($empresa, 'Produtos');
+}
+
+function __hasAtendimentoServicos($empresa){
+	$modulos = ['Agendamentos', 'Serviços', 'NFSe', 'Cobranças Recorrentes', 'Atendimento', 'Reservas'];
+	foreach($modulos as $modulo){
+		if(__isActivePlan($empresa, $modulo)) return true;
+	}
+	return false;
+}
+
+function __hasPessoasUsuarios($empresa){
+	$modulos = ['Pessoas', 'Usuários'];
+	foreach($modulos as $modulo){
+		if(__isActivePlan($empresa, $modulo)) return true;
+	}
+	return false;
+}
+
+function __hasProducao($empresa){
+	$modulos = ['Ordem de Produção', 'Gestão de Produção'];
+	foreach($modulos as $modulo){
+		if(__isActivePlan($empresa, $modulo)) return true;
+	}
+	return false;
+}
+
+function __hasVendasComprasComercial($empresa){
+	$modulos = ['PDV', 'Vendas', 'Compras', 'NFCe', 'Pré venda'];
+	foreach($modulos as $modulo){
+		if(__isActivePlan($empresa, $modulo)) return true;
+	}
+	return false;
+}
+
+function __hasFinanceiro($empresa){
+	$modulos = ['Financeiro', 'Planejamento de Custos'];
+	foreach($modulos as $modulo){
+		if(__isActivePlan($empresa, $modulo)) return true;
+	}
+	return false;
+}
+
+function __hasComercioDigital($empresa){
+	$modulos = ['Cardapio', 'Delivery', 'Ecommerce', 'Mercado Livre', 'Woocommerce', 'Nuvem Shop', 'IFood', 'VendiZap'];
+	foreach($modulos as $modulo){
+		if(__isActivePlan($empresa, $modulo)) return true;
+	}
+	return false;
+}
+
+function __hasTransporte($empresa){
+	$modulos = ['CTe', 'MDFe', 'Veiculos', 'Controle de Fretes'];
+	foreach($modulos as $modulo){
+		if(__isActivePlan($empresa, $modulo)) return true;
+	}
+	return false;
+}
+
+function __hasUtilitarios($empresa){
+	$modulos = ['Localizações', 'CRM', 'Sped'];
+	foreach($modulos as $modulo){
+		if(__isActivePlan($empresa, $modulo)) return true;
+	}
+	return false;
+}
+
 function __isInternacionalizar($empresa){
 	if(!$empresa) return false;
 	$config = $empresa->empresa->configuracaoCardapio;
