@@ -802,11 +802,6 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="{{ route('nota-servico-config.nacional') }}" class="{{ request()->routeIs('nota-servico-config.nacional') ? 'active' : '' }}">
-                                ConfiguraÃ§Ã£o
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </li>
