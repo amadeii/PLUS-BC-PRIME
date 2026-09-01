@@ -223,12 +223,16 @@
                             <a href="{{ route('usuario-super.index') }}">UsuÃ¡rios</a>
                         </li>
 
+                        @if(app('router')->has('configuracao-fatura.index'))
                         <li>
                             <a href="{{ route('configuracao-fatura.index') }}">ConfiguraÃ§Ã£o fatura</a>
                         </li>
+                        @endif
+                        @if(app('router')->has('plano-faturas.index'))
                         <li>
                             <a href="{{ route('plano-faturas.index') }}">Gerenciar faturas</a>
                         </li>
+                        @endif
 
                         <li>
                             <a href="{{ route('gerenciar-planos.index') }}">Gerenciar planos</a>
@@ -266,9 +270,11 @@
                             <a href="{{ route('configuracao-super.index') }}">ConfiguraÃ§Ã£o</a>
                         </li>
 
+                        @if(app('router')->has('config-super.identidade-visual'))
                         <li>
                             <a href="{{ route('config-super.identidade-visual') }}">Identidade visual</a>
                         </li>
+                        @endif
 
                         <li>
                             <a href="{{ route('notificacao-super.index') }}">NotificaÃ§Ãµes</a>
@@ -348,11 +354,13 @@
                             </a>
                         </li>
 
+                        @if(app('router')->has('contador-plano-white-label.index'))
                         <li>
                             <a href="{{ route('contador-plano-white-label.index') }}">
                                 Gerenciar Planos
                             </a>
                         </li>
+                        @endif
                         @endif
 
                     </ul>
@@ -450,9 +458,11 @@
                             <a href="{{ route('sistema') }}">Ambiente do Servidor</a>
                         </li>
 
+                        @if(app('router')->has('custom-update.index'))
                         <li>
                             <a href="{{ route('custom-update.index') }}">DiretÃ³rio customizado</a>
                         </li>
+                        @endif
                     </ul>
                 </div>
             </li>
@@ -826,19 +836,23 @@
                     <ul class="side-nav-second-level">
 
                         @can('locacao_view')
+                        @if(app('router')->has('locacoes.index'))
                         <li>
                             <a href="{{ route('locacoes.index') }}" class="{{ request()->routeIs('locacoes.*') ? 'active' : '' }}">
                                 LocaÃ§Ãµes
                             </a>
                         </li>
+                        @endif
                         @endcan
 
                         @can('locacao_create')
+                        @if(app('router')->has('locacoes.create'))
                         <li>
                             <a href="{{ route('locacoes.create') }}" class="{{ request()->routeIs('locacoes.create') ? 'active' : '' }}">
                                 Nova LocaÃ§Ã£o
                             </a>
                         </li>
+                        @endif
                         @endcan
 
                         @can('veiculo_view')
@@ -882,7 +896,9 @@
                         @endcan
 
                         @can('recorrencia_view')
+                        @if(app('router')->has('recorrencia-contratos.index'))
                         <li><a href="{{ route('recorrencia-contratos.index') }}" class="{{ request()->routeIs('recorrencia-contratos.*') ? 'active' : '' }}">Contratos</a></li>
+                        @endif
                         @endcan
 
                     </ul>
@@ -1270,11 +1286,13 @@
 
                             <div class="collapse {{ $almoxarifadoActive ? 'show' : '' }}" id="almoxarifado" >
                                 <ul class="side-nav-third-level">
+                                    @if(app('router')->has('ordem-producao-requisicao.index'))
                                     <li>
                                         <a href="{{ route('ordem-producao-requisicao.index') }}" class="{{ request()->routeIs('ordem-producao-requisicao.*') ? 'active' : '' }}">
                                             RequisiÃ§Ãµes OP
                                         </a>
                                     </li>
+                                    @endif
 
                                 </ul>
                             </div>
@@ -1316,8 +1334,12 @@
                         <li><a href="{{ route('setor.index') }}" class="{{ request()->routeIs('setor.*') ? 'active' : '' }}">Setores</a></li>
                         @endcan
 
+                        @if(app('router')->has('grupo-maquina-producao.index'))
                         <li><a href="{{ route('grupo-maquina-producao.index') }}" class="{{ request()->routeIs('grupo-maquina-producao.index') ? 'active' : '' }}">Grupo de MÃ¡quinas</a></li>
+                        @endif
+                        @if(app('router')->has('maquina-producao.index'))
                         <li><a href="{{ route('maquina-producao.index') }}" class="{{ request()->routeIs('maquina-producao.index') ? 'active' : '' }}">MÃ¡quinas</a></li>
+                        @endif
 
                         @can('setor_view')
                         <li><a href="{{ route('operacao.index') }}" class="{{ request()->routeIs('operacao.*') ? 'active' : '' }}">OperaÃ§Ãµes</a></li>
@@ -1494,11 +1516,13 @@
                         @endcan
 
                         @can('log_depara_xml_view')
+                        @if(app('router')->has('log-depara-xml.index'))
                         <li>
                             <a href="{{ route('log-depara-xml.index') }}" class="{{ request()->routeIs('log-depara-xml.*') ? 'active' : '' }}">
                                 Logs conversÃ£o XML
                             </a>
                         </li>
+                        @endif
                         @endcan
 
                     </ul>
@@ -1780,7 +1804,9 @@
                                 <ul class="side-nav-third-level">
                                     <li><a href="{{ route('sicredi-config.index') }}" class="{{ request()->routeIs('sicredi-config.*') ? 'active' : '' }}">Sicredi</a></li>
                                     <li><a href="{{ route('asaas-config.index') }}" class="{{ request()->routeIs('asaas-config.*') ? 'active' : '' }}">Asaas</a></li>
+                                    @if(app('router')->has('sicoob-config.index'))
                                     <li><a href="{{ route('sicoob-config.index') }}" class="{{ request()->routeIs('sicoob-config.*') ? 'active' : '' }}">Sicoob</a></li>
+                                    @endif
                                 </ul>
 
                             </div>
@@ -2456,7 +2482,9 @@
                         </li>
 
                         <li><a href="{{ route('sintegra.index') }}" class="{{ request()->routeIs('sintegra.*') ? 'active' : '' }}">Sintegra</a></li>
+                        @if(app('router')->has('mensagem-fiscal.index'))
                         <li><a href="{{ route('mensagem-fiscal.index') }}" class="{{ request()->routeIs('mensagem-fiscal.*') ? 'active' : '' }}">Mensagem fiscal</a></li>
+                        @endif
 
                         <li>
                             <a href="{{ route('relatorio-xml-contador.index') }}" class="{{ request()->routeIs('relatorio-xml-contador.*') ? 'active' : '' }}">
