@@ -1445,15 +1445,15 @@
             @if(__isActivePlan(Auth::user()->empresa, 'Compras'))
             @canany(['compras_view', 'manifesto_view', 'cotacao_view'])
 
-            <li class="side-nav-item {{ request()->routeIs('compras.*', 'manifesto.*', 'cotacoes.*', 'nfe-entrada-xml.*', 'nfe-importa-xml.*', 'relacao-dados-fornecedor.*', 'produto-unidade-conversao.*') ? 'menuitem-active mm-active' : '' }}">
+            <li class="side-nav-item {{ request()->routeIs('compras.*', 'manifesto.*', 'cotacoes.*', 'nfe-entrada-xml.*', 'nfe-importa-xml.*', 'relacao-dados-fornecedor.*') ? 'menuitem-active mm-active' : '' }}">
 
-                <a data-bs-toggle="collapse" href="#sidebarCompra" aria-expanded="{{ request()->routeIs('compras.*', 'manifesto.*', 'cotacoes.*', 'nfe-entrada-xml.*', 'nfe-importa-xml.*', 'relacao-dados-fornecedor.*', 'produto-unidade-conversao.*') ? 'true' : 'false' }}" aria-controls="sidebarIcons" class="side-nav-link">
+                <a data-bs-toggle="collapse" href="#sidebarCompra" aria-expanded="{{ request()->routeIs('compras.*', 'manifesto.*', 'cotacoes.*', 'nfe-entrada-xml.*', 'nfe-importa-xml.*', 'relacao-dados-fornecedor.*') ? 'true' : 'false' }}" aria-controls="sidebarIcons" class="side-nav-link">
                     <i class="ri-logout-box-line"></i>
                     <span>Compras</span>
                     <span class="menu-arrow"></span>
                 </a>
 
-                <div class="collapse {{ request()->routeIs('compras.*', 'manifesto.*', 'cotacoes.*', 'nfe-entrada-xml.*', 'nfe-importa-xml.*', 'relacao-dados-fornecedor.*', 'produto-unidade-conversao.*') ? 'show' : '' }}" id="sidebarCompra">
+                <div class="collapse {{ request()->routeIs('compras.*', 'manifesto.*', 'cotacoes.*', 'nfe-entrada-xml.*', 'nfe-importa-xml.*', 'relacao-dados-fornecedor.*') ? 'show' : '' }}" id="sidebarCompra">
 
                     <ul class="side-nav-second-level">
 
@@ -1491,10 +1491,6 @@
 
                         @can('relacao_dados_fornecedor_view')
                         <li><a href="{{ route('relacao-dados-fornecedor.index') }}" class="{{ request()->routeIs('relacao-dados-fornecedor.*') ? 'active' : '' }}">RelaÃ§Ã£o dados fornecedor</a></li>
-                        @endcan
-
-                        @can('produto_unidade_conversao_view')
-                        <li><a href="{{ route('produto-unidade-conversao.index') }}" class="{{ request()->routeIs('produto-unidade-conversao.*') ? 'active' : '' }}">Produto unidade conversÃ£o</a></li>
                         @endcan
 
                         @can('log_depara_xml_view')
