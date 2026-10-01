@@ -1,4 +1,4 @@
-﻿<div class="leftside-menu">
+<div class="leftside-menu">
     <!-- Brand Logo Light -->
     <a href="/" class="logo logo-light">
         <span class="logo-lg">
@@ -106,7 +106,7 @@
                             <a href="{{ route('cidades.index') }}">Cidades</a>
                         </li>
                         <li>
-                            <a href="{{ route('usuario-super.index') }}">UsuÃ¡rios</a>
+                            <a href="{{ route('usuario-super.index') }}">Usuários</a>
                         </li>
                         <li>
                             <a href="{{ route('ncm.index') }}">NCM</a>
@@ -124,21 +124,21 @@
                             <a href="{{ route('ticket-super.index') }}">Ticket</a>
                         </li>
                         <li>
-                            <a href="{{ route('configuracao-super.index') }}">ConfiguraÃ§Ã£o</a>
+                            <a href="{{ route('configuracao-super.index') }}">Configuração</a>
                         </li>
 
                         <li>
-                            <a href="{{ route('notificacao-super.index') }}">NotificaÃ§Ãµes</a>
+                            <a href="{{ route('notificacao-super.index') }}">Notificações</a>
                         </li>
                         <li>
-                            <a href="{{ route('padroes-etiqueta.index') }}">PadrÃµes para etiqueta</a>
+                            <a href="{{ route('padroes-etiqueta.index') }}">Padrões para etiqueta</a>
                         </li>
 
                         <li>
                             <a href="{{ route('video-suporte.index') }}">Videos de suporte</a>
                         </li>
                         <li>
-                            <a href="{{ route('relatorios-adm.index') }}">RelatÃ³rios</a>
+                            <a href="{{ route('relatorios-adm.index') }}">Relatórios</a>
                         </li>
 
                     </ul>
@@ -156,10 +156,10 @@
                     <ul class="side-nav-second-level">
 
                         <li>
-                            <a href="{{ route('permissions.index') }}">PermissÃµes</a>
+                            <a href="{{ route('permissions.index') }}">Permissões</a>
                         </li>
                         <li>
-                            <a href="{{ route('roles.index') }}">AtribuiÃ§Ãµes</a>
+                            <a href="{{ route('roles.index') }}">Atribuições</a>
                         </li>
 
                     </ul>
@@ -169,7 +169,7 @@
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarPages1" aria-expanded="false" aria-controls="sidebarPages" class="side-nav-link">
                     <i class="ri-file-mark-fill"></i>
-                    <span> EmissÃµes </span>
+                    <span> Emissões </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarPages1">
@@ -220,12 +220,12 @@
                             <a href="{{ route('cidades.index') }}">Cidades</a>
                         </li>
                         <li>
-                            <a href="{{ route('usuario-super.index') }}">UsuÃ¡rios</a>
+                            <a href="{{ route('usuario-super.index') }}">Usuários</a>
                         </li>
 
                         @if(app('router')->has('configuracao-fatura.index'))
                         <li>
-                            <a href="{{ route('configuracao-fatura.index') }}">ConfiguraÃ§Ã£o fatura</a>
+                            <a href="{{ route('configuracao-fatura.index') }}">Configuração fatura</a>
                         </li>
                         @endif
                         @if(app('router')->has('plano-faturas.index'))
@@ -250,10 +250,10 @@
                             <a href="{{ route('nbs.index') }}">NBS</a>
                         </li>
                         <li>
-                            <a href="{{ route('natureza-operacao-super.index') }}">Naturezas de operaÃ§Ã£o</a>
+                            <a href="{{ route('natureza-operacao-super.index') }}">Naturezas de operação</a>
                         </li>
                         <li>
-                            <a href="{{ route('padrao-tributacao-produto-super.index') }}">PadrÃµes de tributaÃ§Ã£o</a>
+                            <a href="{{ route('padrao-tributacao-produto-super.index') }}">Padrões de tributação</a>
                         </li>
                         <li>
                             <a href="{{ route('logs.index') }}">Logs</a>
@@ -267,7 +267,7 @@
                             <a href="{{ route('ticket-super.index') }}">Ticket</a>
                         </li>
                         <li>
-                            <a href="{{ route('configuracao-super.index') }}">ConfiguraÃ§Ã£o</a>
+                            <a href="{{ route('configuracao-super.index') }}">Configuração</a>
                         </li>
 
                         @if(app('router')->has('config-super.identidade-visual'))
@@ -277,20 +277,20 @@
                         @endif
 
                         <li>
-                            <a href="{{ route('notificacao-super.index') }}">NotificaÃ§Ãµes</a>
+                            <a href="{{ route('notificacao-super.index') }}">Notificações</a>
                         </li>
                         <li>
-                            <a href="{{ route('padroes-etiqueta.index') }}">PadrÃµes para etiqueta</a>
+                            <a href="{{ route('padroes-etiqueta.index') }}">Padrões para etiqueta</a>
                         </li>
 
                         <li>
                             <a href="{{ route('video-suporte.index') }}">Videos de suporte</a>
                         </li>
                         <li>
-                            <a href="{{ route('relatorios-adm.index') }}">RelatÃ³rios</a>
+                            <a href="{{ route('relatorios-adm.index') }}">Relatórios</a>
                         </li>
                         <li>
-                            <a href="{{ route('contrato-config.index') }}">ConfiguraÃ§Ã£o de contrato</a>
+                            <a href="{{ route('contrato-config.index') }}">Configuração de contrato</a>
                         </li>
 
                         <li>
@@ -320,10 +320,10 @@
                     <ul class="side-nav-second-level">
 
                         <li>
-                            <a href="{{ route('permissions.index') }}">PermissÃµes</a>
+                            <a href="{{ route('permissions.index') }}">Permissões</a>
                         </li>
                         <li>
-                            <a href="{{ route('roles.index') }}">AtribuiÃ§Ãµes</a>
+                            <a href="{{ route('roles.index') }}">Atribuições</a>
                         </li>
 
                     </ul>
@@ -371,7 +371,7 @@
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarPages1" aria-expanded="false" aria-controls="sidebarPages" class="side-nav-link">
                     <i class="ri-file-mark-fill"></i>
-                    <span> EmissÃµes </span>
+                    <span> Emissões </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarPages1">
@@ -441,7 +441,7 @@
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarAtualizacao" aria-expanded="false" aria-controls="sidebarPages" class="side-nav-link">
                     <i class="ri-refresh-fill"></i>
-                    <span>AtualizaÃ§Ã£o </span>
+                    <span>Atualização </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarAtualizacao">
@@ -451,7 +451,7 @@
                             <a href="{{ route('update-sql.index') }}">Banco de dados</a>
                         </li>
                         <li>
-                            <a href="{{ route('update-file.index') }}">DiretÃ³rios</a>
+                            <a href="{{ route('update-file.index') }}">Diretórios</a>
                         </li>
 
                         <li>
@@ -460,7 +460,7 @@
 
                         @if(app('router')->has('custom-update.index'))
                         <li>
-                            <a href="{{ route('custom-update.index') }}">DiretÃ³rio customizado</a>
+                            <a href="{{ route('custom-update.index') }}">Diretório customizado</a>
                         </li>
                         @endif
                     </ul>
@@ -479,7 +479,7 @@
            <!--  <li class="side-nav-item">
                 <a href="{{ route('sugestao.index') }}" aria-expanded="false" aria-controls="sidebarPages" class="side-nav-link">
                     <i class="ri-code-s-slash-line"></i>
-                    <span>SusgestÃ£o e Desenvolvimento</span>
+                    <span>Susgestão e Desenvolvimento</span>
                 </a>
             </li> -->
 
@@ -579,32 +579,32 @@
 
                         @can('inventario_view')
                         <li>
-                            <a href="{{ route('inventarios.index') }}" class="{{ request()->routeIs('inventarios.*') ? 'active' : '' }}">InventÃ¡rio</a>
+                            <a href="{{ route('inventarios.index') }}" class="{{ request()->routeIs('inventarios.*') ? 'active' : '' }}">Inventário</a>
                         </li>
                         @endcan
 
                         @can('variacao_view')
                         <li>
-                            <a href="{{ route('variacoes.index') }}" class="{{ request()->routeIs('variacoes.*') ? 'active' : '' }}">VariaÃ§Ãµes</a>
+                            <a href="{{ route('variacoes.index') }}" class="{{ request()->routeIs('variacoes.*') ? 'active' : '' }}">Variações</a>
                         </li>
                         @endcan
 
                         @can('lista_preco_view')
                         <li>
-                            <a href="{{ route('lista-preco.index') }}" class="{{ request()->routeIs('lista-preco.*') ? 'active' : '' }}">Lista de preÃ§os</a>
+                            <a href="{{ route('lista-preco.index') }}" class="{{ request()->routeIs('lista-preco.*') ? 'active' : '' }}">Lista de preços</a>
                         </li>
                         @endcan
 
                         @can('promocao_produtos_view')
                         <li>
-                            <a href="{{ route('promocao-produtos.index') }}" class="{{ request()->routeIs('promocao-produtos.*') ? 'active' : '' }}">PromoÃ§Ã£o</a>
+                            <a href="{{ route('promocao-produtos.index') }}" class="{{ request()->routeIs('promocao-produtos.*') ? 'active' : '' }}">Promoção</a>
                         </li>
                         @endcan
 
                         @if(__isPlanoFiscal())
                         @can('config_produto_fiscal_view')
                         <li>
-                            <a href="{{ route('produtopadrao-tributacao.index') }}" class="{{ request()->routeIs('produtopadrao-tributacao.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o PadrÃ£o Fiscal</a>
+                            <a href="{{ route('produtopadrao-tributacao.index') }}" class="{{ request()->routeIs('produtopadrao-tributacao.*') ? 'active' : '' }}">Configuração Padrão Fiscal</a>
                         </li>
                         @endcan
                         @endif
@@ -632,12 +632,12 @@
                         </li>
 
                         <li>
-                            <a href="{{ route('produto-consulta-codigo.index') }}" class="{{ request()->routeIs('produto-consulta-codigo.*') ? 'active' : '' }}">Consulta cÃ³digo</a>
+                            <a href="{{ route('produto-consulta-codigo.index') }}" class="{{ request()->routeIs('produto-consulta-codigo.*') ? 'active' : '' }}">Consulta código</a>
                         </li>
 
                         @can('transferencia_estoque_view')
                         <li>
-                            <a href="{{ route('transferencia-estoque.index') }}" class="{{ request()->routeIs('transferencia-estoque.*') ? 'active' : '' }}">TransferÃªncia de estoque</a>
+                            <a href="{{ route('transferencia-estoque.index') }}" class="{{ request()->routeIs('transferencia-estoque.*') ? 'active' : '' }}">Transferência de estoque</a>
                         </li>
                         @endcan
 
@@ -649,7 +649,7 @@
 
                         @can('unidade_medida_view')
                         <li>
-                            <a href="{{ route('custo-configuracao.index') }}" class="{{ request()->routeIs('custo-configuracao.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o de custo</a>
+                            <a href="{{ route('custo-configuracao.index') }}" class="{{ request()->routeIs('custo-configuracao.*') ? 'active' : '' }}">Configuração de custo</a>
                         </li>
                         @endcan
 
@@ -661,7 +661,7 @@
 
 
             @if(__hasAtendimentoServicos(Auth::user()->empresa))
-            <li class="side-nav-title">ATENDIMENTO / SERVIÃ‡OS</li>
+            <li class="side-nav-title">ATENDIMENTO / SERVIÇOS</li>
             @endif
             @if(__isActivePlan(Auth::user()->empresa, 'Agendamentos'))
             @canany(['agendamento_view'])
@@ -683,14 +683,14 @@
             @endcanany
             @endif
 
-            @if(__isActivePlan(Auth::user()->empresa, 'ServiÃ§os'))
+            @if(__isActivePlan(Auth::user()->empresa, 'Serviços'))
             @canany(['ordem_servico_view'])
 
             <li class="side-nav-item {{ request()->routeIs('ordem-servico.*', 'convenios.*', 'medicos.*', 'laboratorios.*', 'tratamentos-otica.*', 'formato-armacao.*', 'tipo-armacao.*') ? 'menuitem-active mm-active' : '' }}">
 
                 <a data-bs-toggle="collapse" href="#sidebarOs" aria-expanded="{{ request()->routeIs('ordem-servico.*', 'convenios.*', 'medicos.*', 'laboratorios.*', 'tratamentos-otica.*', 'formato-armacao.*', 'tipo-armacao.*') ? 'true' : 'false' }}" aria-controls="sidebarExtendedSer" class="side-nav-link">
                     <i class="ri-ruler-2-line"></i>
-                    <span> Ordem de ServiÃ§o </span>
+                    <span> Ordem de Serviço </span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -709,26 +709,26 @@
                         @if(__isSegmentoPlanoOtica())
 
                         @can('convenio_view')
-                        <li><a href="{{ route('convenios.index') }}" class="{{ request()->routeIs('convenios.*') ? 'active' : '' }}">ConvÃªnios</a></li>
+                        <li><a href="{{ route('convenios.index') }}" class="{{ request()->routeIs('convenios.*') ? 'active' : '' }}">Convênios</a></li>
                         @endcan
 
                         @can('medico_view')
-                        <li><a href="{{ route('medicos.index') }}" class="{{ request()->routeIs('medicos.*') ? 'active' : '' }}">MÃ©dicos</a></li>
+                        <li><a href="{{ route('medicos.index') }}" class="{{ request()->routeIs('medicos.*') ? 'active' : '' }}">Médicos</a></li>
                         @endcan
 
                         @can('laboratorio_view')
-                        <li><a href="{{ route('laboratorios.index') }}" class="{{ request()->routeIs('laboratorios.*') ? 'active' : '' }}">LaboratÃ³rios</a></li>
+                        <li><a href="{{ route('laboratorios.index') }}" class="{{ request()->routeIs('laboratorios.*') ? 'active' : '' }}">Laboratórios</a></li>
                         @endcan
 
                         @can('tratamento_otica_view')
-                        <li><a href="{{ route('tratamentos-otica.index') }}" class="{{ request()->routeIs('tratamentos-otica.*') ? 'active' : '' }}">Tratamentos Ã³tica</a></li>
+                        <li><a href="{{ route('tratamentos-otica.index') }}" class="{{ request()->routeIs('tratamentos-otica.*') ? 'active' : '' }}">Tratamentos ótica</a></li>
                         @endcan
 
                         @can('formato_armacao_view')
-                        <li><a href="{{ route('formato-armacao.index') }}" class="{{ request()->routeIs('formato-armacao.*') ? 'active' : '' }}">Formatos de armaÃ§Ã£o</a></li>
+                        <li><a href="{{ route('formato-armacao.index') }}" class="{{ request()->routeIs('formato-armacao.*') ? 'active' : '' }}">Formatos de armação</a></li>
                         @endcan
 
-                        <li><a href="{{ route('tipo-armacao.index') }}" class="{{ request()->routeIs('tipo-armacao.*') ? 'active' : '' }}">Tipos de armaÃ§Ã£o</a></li>
+                        <li><a href="{{ route('tipo-armacao.index') }}" class="{{ request()->routeIs('tipo-armacao.*') ? 'active' : '' }}">Tipos de armação</a></li>
 
                         @endif
 
@@ -748,7 +748,7 @@
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarExtendedServ" aria-expanded="false" aria-controls="sidebarExtendedSer" class="side-nav-link">
                     <i class="ri-tools-fill"></i>
-                    <span> ServiÃ§os </span>
+                    <span> Serviços </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarExtendedServ">
@@ -768,7 +768,7 @@
 
                         @can('servico_create')
                         <li>
-                            <a href="{{ route('servicos.create') }}">Novo serviÃ§o</a>
+                            <a href="{{ route('servicos.create') }}">Novo serviço</a>
                         </li>
                         @endcan
 
@@ -818,7 +818,7 @@
             @endcanany
             @endif
 
-            @if(__isActivePlan(Auth::user()->empresa, 'LocaÃ§Ã£o'))
+            @if(__isActivePlan(Auth::user()->empresa, 'Locação'))
             @canany(['locacao_view', 'veiculo_view'])
 
             <li class="side-nav-item {{ request()->routeIs('locacoes.*', 'veiculos.*') ? 'menuitem-active mm-active' : '' }}">
@@ -826,7 +826,7 @@
                 <a data-bs-toggle="collapse" href="#sidebarLocacao" aria-expanded="{{ request()->routeIs('locacoes.*', 'veiculos.*') ? 'true' : 'false' }}" aria-controls="sidebarLocacao" class="side-nav-link">
 
                     <i class="ri-roadster-line"></i>
-                    <span> LocaÃ§Ã£o </span>
+                    <span> Locação </span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -839,7 +839,7 @@
                         @if(app('router')->has('locacoes.index'))
                         <li>
                             <a href="{{ route('locacoes.index') }}" class="{{ request()->routeIs('locacoes.*') ? 'active' : '' }}">
-                                LocaÃ§Ãµes
+                                Locações
                             </a>
                         </li>
                         @endif
@@ -849,7 +849,7 @@
                         @if(app('router')->has('locacoes.create'))
                         <li>
                             <a href="{{ route('locacoes.create') }}" class="{{ request()->routeIs('locacoes.create') ? 'active' : '' }}">
-                                Nova LocaÃ§Ã£o
+                                Nova Locação
                             </a>
                         </li>
                         @endif
@@ -858,7 +858,7 @@
                         @can('veiculo_view')
                         <li>
                             <a href="{{ route('veiculos.index') }}" class="{{ request()->routeIs('veiculos.*') ? 'active' : '' }}">
-                                VeÃ­culos
+                                Veículos
                             </a>
                         </li>
                         @endcan
@@ -872,14 +872,14 @@
             @endcanany
             @endif
 
-            @if(__isActivePlan(Auth::user()->empresa, 'CobranÃ§as Recorrentes'))
+            @if(__isActivePlan(Auth::user()->empresa, 'Cobranças Recorrentes'))
 
             <li class="side-nav-item {{ request()->routeIs('recorrencias.*', 'recorrencia-regra-comunicacao.*', 'recorrencia-contrato-modelos.*', 'recorrencia-contratos.*') ? 'menuitem-active mm-active' : '' }}">
 
                 <a data-bs-toggle="collapse" href="#sidebarRecorrencia" aria-expanded="{{ request()->routeIs('recorrencias.*', 'recorrencia-regra-comunicacao.*', 'recorrencia-contrato-modelos.*', 'recorrencia-contratos.*') ? 'true' : 'false' }}" aria-controls="sidebarRecorrencia" class="side-nav-link"
                     >
                     <i class="ri-repeat-line"></i>
-                    <span> CobranÃ§as Recorrentes </span>
+                    <span> Cobranças Recorrentes </span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -888,8 +888,8 @@
                     <ul class="side-nav-second-level">
 
                         @can('recorrencia_view')
-                        <li><a href="{{ route('recorrencias.index') }}" class="{{ request()->routeIs('recorrencias.*') ? 'active' : '' }}">CobranÃ§as</a></li>
-                        <li><a href="{{ route('recorrencia-regra-comunicacao.index') }}" class="{{ request()->routeIs('recorrencia-regra-comunicacao.*') ? 'active' : '' }}">RÃ©gra de ComunicaÃ§Ã£o</a></li>
+                        <li><a href="{{ route('recorrencias.index') }}" class="{{ request()->routeIs('recorrencias.*') ? 'active' : '' }}">Cobranças</a></li>
+                        <li><a href="{{ route('recorrencia-regra-comunicacao.index') }}" class="{{ request()->routeIs('recorrencia-regra-comunicacao.*') ? 'active' : '' }}">Régra de Comunicação</a></li>
                         @endcan
                         @can('recorrencia_contrato_modelo_view')
                         <li><a href="{{ route('recorrencia-contrato-modelos.index') }}" class="{{ request()->routeIs('recorrencia-contrato-modelos.*') ? 'active' : '' }}">Modelos de Contrato</a></li>
@@ -942,13 +942,13 @@
 
                         <li>
                             <a href="{{ route('interrupcoes.index') }}" class="{{ request()->routeIs('interrupcoes.*') ? 'active' : '' }}">
-                                InterrupÃ§Ãµes
+                                Interrupções
                             </a>
                         </li>
 
                         <li>
                             <a href="{{ route('funcionamentos.index') }}" class="{{ request()->routeIs('funcionamentos.*') ? 'active' : '' }}">
-                                HorÃ¡rio de Funcionamento
+                                Horário de Funcionamento
                             </a>
                         </li>
 
@@ -975,15 +975,15 @@
                     <ul class="side-nav-second-level">
 
                         @can('config_reserva_view')
-                        <li><a href="{{ route('config-reserva.index') }}" class="{{ request()->routeIs('config-reserva.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('config-reserva.index') }}" class="{{ request()->routeIs('config-reserva.*') ? 'active' : '' }}">Configuração</a></li>
                         @endcan
 
                         @can('categoria_acomodacao_view')
-                        <li><a href="{{ route('categoria-acomodacao.index') }}" class="{{ request()->routeIs('categoria-acomodacao.*') ? 'active' : '' }}">Categorias de acomodaÃ§Ã£o</a></li>
+                        <li><a href="{{ route('categoria-acomodacao.index') }}" class="{{ request()->routeIs('categoria-acomodacao.*') ? 'active' : '' }}">Categorias de acomodação</a></li>
                         @endcan
 
                         @can('acomodacao_view')
-                        <li><a href="{{ route('acomodacao.index') }}" class="{{ request()->routeIs('acomodacao.*') ? 'active' : '' }}">AcomodaÃ§Ãµes</a></li>
+                        <li><a href="{{ route('acomodacao.index') }}" class="{{ request()->routeIs('acomodacao.*') ? 'active' : '' }}">Acomodações</a></li>
                         @endcan
 
                         @can('frigobar_view')
@@ -1006,18 +1006,18 @@
             @endif
             @endif
 
-            <!--  fim atendimento/serviÃ§os -->
+            <!--  fim atendimento/serviços -->
 
 
             @if(__hasPessoasUsuarios(Auth::user()->empresa))
-            <li class="side-nav-title">PESSOAS E USUÃRIOS</li>
+            <li class="side-nav-title">PESSOAS E USUÁRIOS</li>
             @endif
             @canany(['usuarios_view', 'controle_acesso_view'])
 
             <li class="side-nav-item {{ request()->routeIs('usuarios.*', 'controle-acesso.*', 'config-fiscal-usuario.*') ? 'menuitem-active mm-active' : '' }}" id="step6">
                 <a data-bs-toggle="collapse" href="#sidebarUsuarios" aria-expanded="{{ request()->routeIs('usuarios.*', 'controle-acesso.*', 'config-fiscal-usuario.*') ? 'true' : 'false' }}" aria-controls="sidebarIcons" class="side-nav-link">
                     <i class="ri-user-fill"></i>
-                    <span>UsuÃ¡rios</span>
+                    <span>Usuários</span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -1032,11 +1032,11 @@
                         @can('controle_acesso_view')
                         <li><a href="{{ route('controle-acesso.index') }}" class="{{ request()->routeIs('controle-acesso.*') ? 'active' : '' }}">Controle de acesso</a></li>
 
-                        <li><a href="{{ route('usuarios.historico-acesso') }}" class="{{ request()->routeIs('usuarios.historico-acesso') ? 'active' : '' }}">HistÃ³rico de acesso</a></li>
+                        <li><a href="{{ route('usuarios.historico-acesso') }}" class="{{ request()->routeIs('usuarios.historico-acesso') ? 'active' : '' }}">Histórico de acesso</a></li>
                         @endcan
 
                         @can('config_fiscal_usuario_view')
-                        <li><a href="{{ route('config-fiscal-usuario.index') }}" class="{{ request()->routeIs('config-fiscal-usuario.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o fiscal</a></li>
+                        <li><a href="{{ route('config-fiscal-usuario.index') }}" class="{{ request()->routeIs('config-fiscal-usuario.*') ? 'active' : '' }}">Configuração fiscal</a></li>
                         @endcan
                     </ul>
                 </div>
@@ -1081,7 +1081,7 @@
 
                 <a data-bs-toggle="collapse" href="#sidebarGestaoPessoal" aria-expanded="{{ request()->routeIs('funcionarios.*', 'evento-funcionarios.*', 'ponto-jornada.*', 'ponto-configuracao.*', 'funcionario-eventos.*', 'ponto-funcionario.*', 'apuracao-mensal.*', 'ponto-registro.*', 'ponto-ajuste.*', 'ponto-relatorio.*', 'comissao-margem.*') ? 'true' : 'false' }}" aria-controls="sidebarGestaoPessoal" class="side-nav-link">
                     <i class="ri-folder-user-line"></i>
-                    <span>GestÃ£o Pessoal</span>
+                    <span>Gestão Pessoal</span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -1102,7 +1102,7 @@
                                 <ul class="side-nav-third-level">
 
                                     @can('funcionario_view')
-                                    <li><a href="{{ route('funcionarios.index') }}" class="{{ request()->routeIs('funcionarios.*') ? 'active' : '' }}">FuncionÃ¡rios</a></li>
+                                    <li><a href="{{ route('funcionarios.index') }}" class="{{ request()->routeIs('funcionarios.*') ? 'active' : '' }}">Funcionários</a></li>
                                     @endcan
 
                                     @can('apuracao_mensal_view')
@@ -1114,7 +1114,7 @@
                                     @endcan
 
                                     @can('ponto_configuracao_view')
-                                    <li><a href="{{ route('ponto-configuracao.index') }}" class="{{ request()->routeIs('ponto-configuracao.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o de Ponto</a></li>
+                                    <li><a href="{{ route('ponto-configuracao.index') }}" class="{{ request()->routeIs('ponto-configuracao.*') ? 'active' : '' }}">Configuração de Ponto</a></li>
                                     @endcan
                                 </ul>
                             </div>
@@ -1125,7 +1125,7 @@
                         <li>
 
                             <a data-bs-toggle="collapse" href="#gestaoPessoalVinculos" aria-expanded="{{ request()->routeIs('funcionario-eventos.*', 'ponto-funcionario.*') ? 'true' : 'false' }}">
-                                <span> VÃ­nculos </span>
+                                <span> Vínculos </span>
                                 <span class="menu-arrow"></span>
                             </a>
 
@@ -1134,11 +1134,11 @@
                                 <ul class="side-nav-third-level">
 
                                     @can('apuracao_mensal_view')
-                                    <li><a href="{{ route('funcionario-eventos.index') }}" class="{{ request()->routeIs('funcionario-eventos.*') ? 'active' : '' }}">FuncionÃ¡rios x Eventos</a></li>
+                                    <li><a href="{{ route('funcionario-eventos.index') }}" class="{{ request()->routeIs('funcionario-eventos.*') ? 'active' : '' }}">Funcionários x Eventos</a></li>
                                     @endcan
 
                                     @can('ponto_funcionario_view')
-                                    <li><a href="{{ route('ponto-funcionario.index') }}" class="{{ request()->routeIs('ponto-funcionario.*') ? 'active' : '' }}">FuncionÃ¡rios x Jornada</a></li>
+                                    <li><a href="{{ route('ponto-funcionario.index') }}" class="{{ request()->routeIs('ponto-funcionario.*') ? 'active' : '' }}">Funcionários x Jornada</a></li>
                                     @endcan
                                 </ul>
                             </div>
@@ -1148,7 +1148,7 @@
                         @canany(['apuracao_mensal_view', 'ponto_registro_view', 'ponto_ajuste_view'])
                         <li>
                             <a data-bs-toggle="collapse" href="#gestaoPessoalOperacao" aria-expanded="{{ request()->routeIs('apuracao-mensal.*', 'ponto-registro.*', 'ponto-ajuste.*') ? 'true' : 'false' }}">
-                                <span> OperaÃ§Ã£o </span>
+                                <span> Operação </span>
                                 <span class="menu-arrow"></span>
                             </a>
 
@@ -1157,7 +1157,7 @@
                                 <ul class="side-nav-third-level">
 
                                     @can('apuracao_mensal_view')
-                                    <li><a href="{{ route('apuracao-mensal.index') }}" class="{{ request()->routeIs('apuracao-mensal.*') ? 'active' : '' }}">ApuraÃ§Ã£o Mensal</a></li>
+                                    <li><a href="{{ route('apuracao-mensal.index') }}" class="{{ request()->routeIs('apuracao-mensal.*') ? 'active' : '' }}">Apuração Mensal</a></li>
                                     @endcan
 
                                     @if(__isAdmin())
@@ -1178,7 +1178,7 @@
                         <li>
 
                             <a data-bs-toggle="collapse" href="#gestaoPessoalRelatorios" aria-expanded="{{ request()->routeIs('ponto-relatorio.*', 'comissao-margem.*') ? 'true' : 'false' }}">
-                                <span> RelatÃ³rios </span>
+                                <span> Relatórios </span>
                                 <span class="menu-arrow"></span>
                             </a>
 
@@ -1188,12 +1188,12 @@
 
                                     @if(__isAdmin())
                                     @can('ponto_registro_view')
-                                    <li><a href="{{ route('ponto-relatorio.index') }}" class="{{ request()->routeIs('ponto-relatorio.*') ? 'active' : '' }}">RelatÃ³rio de Ponto</a></li>
+                                    <li><a href="{{ route('ponto-relatorio.index') }}" class="{{ request()->routeIs('ponto-relatorio.*') ? 'active' : '' }}">Relatório de Ponto</a></li>
                                     @endcan
                                     @endif
 
                                     @can('comissao_margem_view')
-                                    <li><a href="{{ route('comissao-margem.index') }}" class="{{ request()->routeIs('comissao-margem.*') ? 'active' : '' }}">ComissÃ£o por margem</a></li>
+                                    <li><a href="{{ route('comissao-margem.index') }}" class="{{ request()->routeIs('comissao-margem.*') ? 'active' : '' }}">Comissão por margem</a></li>
                                     @endcan
 
                                 </ul>
@@ -1209,9 +1209,9 @@
 
 
             @if(__hasProducao(Auth::user()->empresa))
-            <li class="side-nav-title">PRODUÃ‡ÃƒO</li>
+            <li class="side-nav-title">PRODUÇÃO</li>
             @endif
-            @if(__isActivePlan(Auth::user()->empresa, 'Ordem de ProduÃ§Ã£o'))
+            @if(__isActivePlan(Auth::user()->empresa, 'Ordem de Produção'))
             @canany([
             'ordem_producao_view',
             'ordem_producao_create',
@@ -1233,7 +1233,7 @@
 
                 <a data-bs-toggle="collapse" href="#sidebarOrdemProducao" aria-expanded="{{ $opActive ? 'true' : 'false' }}" aria-controls="sidebarOrdemProducao" class="side-nav-link">
                     <i class="ri-pencil-ruler-line"></i>
-                    <span>Ordem de ProduÃ§Ã£o</span>
+                    <span>Ordem de Produção</span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -1289,7 +1289,7 @@
                                     @if(app('router')->has('ordem-producao-requisicao.index'))
                                     <li>
                                         <a href="{{ route('ordem-producao-requisicao.index') }}" class="{{ request()->routeIs('ordem-producao-requisicao.*') ? 'active' : '' }}">
-                                            RequisiÃ§Ãµes OP
+                                            Requisições OP
                                         </a>
                                     </li>
                                     @endif
@@ -1307,12 +1307,12 @@
             @endcanany
             @endif
 
-            @if(__isActivePlan(Auth::user()->empresa, 'GestÃ£o de ProduÃ§Ã£o'))
+            @if(__isActivePlan(Auth::user()->empresa, 'Gestão de Produção'))
             @canany(['gestao_producao_view'])
             <li class="side-nav-item {{ request()->routeIs('gestao-producao.*', 'centro-custo.*', 'setor.*', 'operacao.*', 'rotina-fabricacao.*', 'programacao-producao.*', 'maquina-producao.*', 'grupo-maquina-producao.*') ? 'menuitem-active mm-active' : '' }}">
                 <a data-bs-toggle="collapse" href="#sidebarGestaoProducao" aria-expanded="{{ request()->routeIs('gestao-producao.*', 'centro-custo.*', 'setor.*', 'operacao.*', 'rotina-fabricacao.*', 'programacao-producao.*', 'maquina-producao.*', 'grupo-maquina-producao.*') ? 'true' : 'false' }}" aria-controls="sidebarIcons" class="side-nav-link">
                     <i class="ri-compasses-fill"></i>
-                    <span>GestÃ£o de ProduÃ§Ã£o</span>
+                    <span>Gestão de Produção</span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse {{ request()->routeIs('gestao-producao.*', 'centro-custo.*', 'setor.*', 'operacao.*', 'rotina-fabricacao.*', 'programacao-producao.*', 'maquina-producao.*', 'grupo-maquina-producao.*') ? 'show' : '' }}" id="sidebarGestaoProducao">
@@ -1323,7 +1323,7 @@
                         @endcan
 
                         @can('gestao_producao_create')
-                        <li><a href="{{ route('gestao-producao.create') }}" class="{{ request()->routeIs('gestao-producao.create') ? 'active' : '' }}">Nova ProduÃ§Ã£o</a></li>
+                        <li><a href="{{ route('gestao-producao.create') }}" class="{{ request()->routeIs('gestao-producao.create') ? 'active' : '' }}">Nova Produção</a></li>
                         @endcan
 
                         @can('setor_view')
@@ -1335,19 +1335,19 @@
                         @endcan
 
                         @if(app('router')->has('grupo-maquina-producao.index'))
-                        <li><a href="{{ route('grupo-maquina-producao.index') }}" class="{{ request()->routeIs('grupo-maquina-producao.index') ? 'active' : '' }}">Grupo de MÃ¡quinas</a></li>
+                        <li><a href="{{ route('grupo-maquina-producao.index') }}" class="{{ request()->routeIs('grupo-maquina-producao.index') ? 'active' : '' }}">Grupo de Máquinas</a></li>
                         @endif
                         @if(app('router')->has('maquina-producao.index'))
-                        <li><a href="{{ route('maquina-producao.index') }}" class="{{ request()->routeIs('maquina-producao.index') ? 'active' : '' }}">MÃ¡quinas</a></li>
+                        <li><a href="{{ route('maquina-producao.index') }}" class="{{ request()->routeIs('maquina-producao.index') ? 'active' : '' }}">Máquinas</a></li>
                         @endif
 
                         @can('setor_view')
-                        <li><a href="{{ route('operacao.index') }}" class="{{ request()->routeIs('operacao.*') ? 'active' : '' }}">OperaÃ§Ãµes</a></li>
+                        <li><a href="{{ route('operacao.index') }}" class="{{ request()->routeIs('operacao.*') ? 'active' : '' }}">Operações</a></li>
                         @endcan
 
                         @can('rotina_fabricacao_view')
-                        <li><a href="{{ route('rotina-fabricacao.index') }}" class="{{ request()->routeIs('rotina-fabricacao.*') ? 'active' : '' }}">Rotina de FabricaÃ§Ã£o</a></li>
-                        <li><a href="{{ route('programacao-producao.index') }}" class="{{ request()->routeIs('programacao-producao.*') ? 'active' : '' }}">ProgramaÃ§Ã£o de ProduÃ§Ã£o</a></li>
+                        <li><a href="{{ route('rotina-fabricacao.index') }}" class="{{ request()->routeIs('rotina-fabricacao.*') ? 'active' : '' }}">Rotina de Fabricação</a></li>
+                        <li><a href="{{ route('programacao-producao.index') }}" class="{{ request()->routeIs('programacao-producao.*') ? 'active' : '' }}">Programação de Produção</a></li>
                         @endcan
 
 
@@ -1357,7 +1357,7 @@
             </li>
             @endcanany
             @endif
-            <!-- fim produÃ§Ã£o -->
+            <!-- fim produção -->
 
             @if(__hasVendasComprasComercial(Auth::user()->empresa) && !__isContador())
             <li class="side-nav-title">VENDAS/COMPRAS COMERCIAL</li>
@@ -1381,7 +1381,7 @@
                         <li><a href="{{ route('frontbox.index') }}" class="{{ request()->routeIs('frontbox.index') ? 'active' : '' }}">Listar</a></li>
 
                         @if(__isAdmin())
-                        <li><a href="{{ route('venda-temporaria.index') }}" class="{{ request()->routeIs('venda-temporaria.*') ? 'active' : '' }}">Vendas temporÃ¡rias</a></li>
+                        <li><a href="{{ route('venda-temporaria.index') }}" class="{{ request()->routeIs('venda-temporaria.*') ? 'active' : '' }}">Vendas temporárias</a></li>
                         @endif
                         @endcan
 
@@ -1436,7 +1436,7 @@
                         @endif
 
                         @can('orcamento_view')
-                        <li><a href="{{ route('orcamentos.index') }}" class="{{ request()->routeIs('orcamentos.*') ? 'active' : '' }}">OrÃ§amentos</a></li>
+                        <li><a href="{{ route('orcamentos.index') }}" class="{{ request()->routeIs('orcamentos.*') ? 'active' : '' }}">Orçamentos</a></li>
                         @endcan
 
                         @can('nfe_view')
@@ -1496,7 +1496,7 @@
                         @endcan
 
                         @can('cotacao_view')
-                        <li><a href="{{ route('cotacoes.index') }}" class="{{ request()->routeIs('cotacoes.*') ? 'active' : '' }}">CotaÃ§Ã£o</a></li>
+                        <li><a href="{{ route('cotacoes.index') }}" class="{{ request()->routeIs('cotacoes.*') ? 'active' : '' }}">Cotação</a></li>
                         @endcan
 
                         @if(__isPlanoFiscal())
@@ -1512,14 +1512,14 @@
                         @endif
 
                         @can('relacao_dados_fornecedor_view')
-                        <li><a href="{{ route('relacao-dados-fornecedor.index') }}" class="{{ request()->routeIs('relacao-dados-fornecedor.*') ? 'active' : '' }}">RelaÃ§Ã£o dados fornecedor</a></li>
+                        <li><a href="{{ route('relacao-dados-fornecedor.index') }}" class="{{ request()->routeIs('relacao-dados-fornecedor.*') ? 'active' : '' }}">Relação dados fornecedor</a></li>
                         @endcan
 
                         @can('log_depara_xml_view')
                         @if(app('router')->has('log-depara-xml.index'))
                         <li>
                             <a href="{{ route('log-depara-xml.index') }}" class="{{ request()->routeIs('log-depara-xml.*') ? 'active' : '' }}">
-                                Logs conversÃ£o XML
+                                Logs conversão XML
                             </a>
                         </li>
                         @endif
@@ -1539,7 +1539,7 @@
 
                 <a data-bs-toggle="collapse" href="#sidebarDevolucao" aria-expanded="{{ request()->routeIs('devolucao.*', 'trocas.*') ? 'true' : 'false' }}" aria-controls="sidebarIcons" class="side-nav-link">
                     <i class="ri-arrow-go-back-fill"></i>
-                    <span>DevoluÃ§Ã£o</span>
+                    <span>Devolução</span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -1548,15 +1548,15 @@
                     <ul class="side-nav-second-level">
 
                         @can('devolucao_view')
-                        <li><a href="{{ route('devolucao.index') }}" class="{{ request()->routeIs('devolucao.index') ? 'active' : '' }}">Lista devoluÃ§Ã£o XML</a></li>
+                        <li><a href="{{ route('devolucao.index') }}" class="{{ request()->routeIs('devolucao.index') ? 'active' : '' }}">Lista devolução XML</a></li>
                         @endcan
 
                         @can('devolucao_create')
-                        <li><a href="{{ route('devolucao.xml') }}" class="{{ request()->routeIs('devolucao.xml') ? 'active' : '' }}">Nova devoluÃ§Ã£o XML</a></li>
+                        <li><a href="{{ route('devolucao.xml') }}" class="{{ request()->routeIs('devolucao.xml') ? 'active' : '' }}">Nova devolução XML</a></li>
                         @endcan
 
                         @can('troca_view')
-                        <li><a href="{{ route('trocas.index') }}" class="{{ request()->routeIs('trocas.*') ? 'active' : '' }}">Trocas/DevoluÃ§Ã£o</a></li>
+                        <li><a href="{{ route('trocas.index') }}" class="{{ request()->routeIs('trocas.*') ? 'active' : '' }}">Trocas/Devolução</a></li>
                         @endcan
                     </ul>
                 </div>
@@ -1603,7 +1603,7 @@
 
                         <li><a href="{{ route('nfce.import-zip') }}" class="{{ request()->routeIs('nfce.import-zip') ? 'active' : '' }}">Importar XML</a></li>
 
-                        <li><a href="{{ route('nfce-contigencia.index') }}" class="{{ request()->routeIs('nfce-contigencia.*') ? 'active' : '' }}">Envio ContingÃªncia</a></li>
+                        <li><a href="{{ route('nfce-contigencia.index') }}" class="{{ request()->routeIs('nfce-contigencia.*') ? 'active' : '' }}">Envio Contingência</a></li>
 
                         @can('nfce_view')
                         <li><a href="{{ route('faturamento-nfce.index') }}" class="{{ request()->routeIs('faturamento-nfe.index') ? 'active' : '' }}">Faturamento (NFC-e)</a></li>
@@ -1615,13 +1615,13 @@
             @endcanany
             @endif
 
-            @if(__isActivePlan(Auth::user()->empresa, 'PrÃ© venda'))
+            @if(__isActivePlan(Auth::user()->empresa, 'Pré venda'))
             @canany(['pre_venda_view'])
             <li class="side-nav-item {{ request()->routeIs('pre-venda.*') ? 'menuitem-active mm-active' : '' }}">
 
                 <a data-bs-toggle="collapse" href="#sidebarPreVenda" aria-expanded="{{ request()->routeIs('pre-venda.*') ? 'true' : 'false' }}" aria-controls="sidebarIcons" class="side-nav-link">
                     <i class="ri-list-ordered"></i>
-                    <span>PrÃ© Venda</span>
+                    <span>Pré Venda</span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -1674,7 +1674,7 @@
                             <div class="collapse {{ request()->routeIs('caixa.*') ? 'show' : '' }}" id="caixa">
 
                                 <ul class="side-nav-third-level">
-                                    <li><a href="{{ route('caixa.index') }}" class="{{ request()->routeIs('caixa.index') ? 'active' : '' }}">MovimentaÃ§Ã£o</a></li>
+                                    <li><a href="{{ route('caixa.index') }}" class="{{ request()->routeIs('caixa.index') ? 'active' : '' }}">Movimentação</a></li>
                                     <li><a href="{{ route('caixa.create') }}" class="{{ request()->routeIs('caixa.create') ? 'active' : '' }}">Abrir caixa</a></li>
                                     <li><a href="{{ route('caixa.list') }}" class="{{ request()->routeIs('caixa.list') ? 'active' : '' }}">Listar</a></li>
                                 </ul>
@@ -1724,7 +1724,7 @@
                                 <ul class="side-nav-third-level">
 
                                     @can('conta_pagar_view')
-                                    <li><a href="{{ route('fechamento-mensal.historic') }}" class="{{ request()->routeIs('fechamento-mensal.historic') ? 'active' : '' }}">HistÃ³rico</a></li>
+                                    <li><a href="{{ route('fechamento-mensal.historic') }}" class="{{ request()->routeIs('fechamento-mensal.historic') ? 'active' : '' }}">Histórico</a></li>
                                     @endcan
 
                                     @can('conta_pagar_create')
@@ -1770,7 +1770,7 @@
                         @endcan
 
                         @can('relatorio_view')
-                        <li><a href="{{ route('relatorios.index') }}" class="{{ request()->routeIs('relatorios.*') ? 'active' : '' }}">RelatÃ³rios</a></li>
+                        <li><a href="{{ route('relatorios.index') }}" class="{{ request()->routeIs('relatorios.*') ? 'active' : '' }}">Relatórios</a></li>
                         @endcan
 
                         @can('taxa_pagamento_view')
@@ -1795,7 +1795,7 @@
                         <li>
 
                             <a data-bs-toggle="collapse" href="#config-boleto" aria-expanded="{{ request()->routeIs('sicredi-config.*', 'asaas-config.*', 'sicoob-config.*') ? 'true' : 'false' }}">
-                                <span> ConfiguraÃ§Ã£o boleto </span>
+                                <span> Configuração boleto </span>
                                 <span class="menu-arrow"></span>
                             </a>
 
@@ -1813,7 +1813,7 @@
 
                         </li>
 
-                        <li><a href="{{ route('cobranca-bancaria.index') }}" class="{{ request()->routeIs('cobranca-bancaria.*') ? 'active' : '' }}">CobranÃ§a bancÃ¡ria</a></li>
+                        <li><a href="{{ route('cobranca-bancaria.index') }}" class="{{ request()->routeIs('cobranca-bancaria.*') ? 'active' : '' }}">Cobrança bancária</a></li>
                         @endcan
 
                     </ul>
@@ -1853,7 +1853,7 @@
 
 
             @if(__hasComercioDigital(Auth::user()->empresa))
-            <li class="side-nav-title">COMÃ‰RCIO DIGITAL</li>
+            <li class="side-nav-title">COMÉRCIO DIGITAL</li>
             @endif
             @if(__isActivePlan(Auth::user()->empresa, 'Cardapio'))
             @can('cardapio_view')
@@ -1862,7 +1862,7 @@
 
                 <a data-bs-toggle="collapse" href="#sidebarCardapio" aria-expanded="{{ request()->routeIs('config-cardapio.*', 'produtos-cardapio.*', 'categoria-adicional.*', 'adicionais.*', 'pedidos-cardapio.*', 'mesas.*', 'pedido-cozinha.*', 'impressao-pedido.*', 'carrossel.*', 'avaliacao-cardapio.*', 'tamanhos-pizza.*', 'atendimento-garcom.*') ? 'true' : 'false' }}" aria-controls="sidebarIcons" class="side-nav-link">
                     <i class="ri-restaurant-2-line"></i>
-                    <span>CardÃ¡pio</span>
+                    <span>Cardápio</span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -1870,7 +1870,7 @@
 
                     <ul class="side-nav-second-level">
 
-                        <li><a href="{{ route('config-cardapio.index') }}" class="{{ request()->routeIs('config-cardapio.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('config-cardapio.index') }}" class="{{ request()->routeIs('config-cardapio.*') ? 'active' : '' }}">Configuração</a></li>
 
                         <li><a href="{{ route('produtos-cardapio.categorias') }}" class="{{ request()->routeIs('produtos-cardapio.categorias') ? 'active' : '' }}">Categorias</a></li>
 
@@ -1886,17 +1886,17 @@
 
                         <li><a href="{{ route('pedido-cozinha.index') }}" class="{{ request()->routeIs('pedido-cozinha.*') ? 'active' : '' }}">Controle de pedidos</a></li>
 
-                        <li><a href="{{ route('impressao-pedido.index') }}" class="{{ request()->routeIs('impressao-pedido.*') ? 'active' : '' }}">Controle de impressÃ£o</a></li>
+                        <li><a href="{{ route('impressao-pedido.index') }}" class="{{ request()->routeIs('impressao-pedido.*') ? 'active' : '' }}">Controle de impressão</a></li>
 
                         <li><a href="{{ route('carrossel.index') }}" class="{{ request()->routeIs('carrossel.*') ? 'active' : '' }}">Carrossel destaque</a></li>
 
-                        <li><a href="{{ route('avaliacao-cardapio.index') }}" class="{{ request()->routeIs('avaliacao-cardapio.*') ? 'active' : '' }}">AvaliaÃ§Ãµes</a></li>
+                        <li><a href="{{ route('avaliacao-cardapio.index') }}" class="{{ request()->routeIs('avaliacao-cardapio.*') ? 'active' : '' }}">Avaliações</a></li>
 
                         <li><a href="{{ route('tamanhos-pizza.index') }}" class="{{ request()->routeIs('tamanhos-pizza.*') ? 'active' : '' }}">Tamanhos de pizza</a></li>
 
-                        <li><a href="{{ route('atendimento-garcom.index') }}" class="{{ request()->routeIs('atendimento-garcom.*') ? 'active' : '' }}">Atendimentos garÃ§om</a></li>
+                        <li><a href="{{ route('atendimento-garcom.index') }}" class="{{ request()->routeIs('atendimento-garcom.*') ? 'active' : '' }}">Atendimentos garçom</a></li>
 
-                        <li><a href="{{ route('pedidos-cardapio.historico') }}" class="{{ request()->routeIs('pedidos-cardapio.historico') ? 'active' : '' }}">HistÃ³rico</a></li>
+                        <li><a href="{{ route('pedidos-cardapio.historico') }}" class="{{ request()->routeIs('pedidos-cardapio.historico') ? 'active' : '' }}">Histórico</a></li>
 
                         @if(file_exists(public_path('app.apk')))
                         <li><a href="{{ route('config-cardapio.download') }}" class="{{ request()->routeIs('config-cardapio.download') ? 'active' : '' }}">Download APP</a></li>
@@ -1924,17 +1924,17 @@
 
                     <ul class="side-nav-second-level">
 
-                        <li><a href="{{ route('config-marketplace.index') }}" class="{{ request()->routeIs('config-marketplace.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('config-marketplace.index') }}" class="{{ request()->routeIs('config-marketplace.*') ? 'active' : '' }}">Configuração</a></li>
 
                         <li><a href="{{ route('pedidos-delivery.index') }}" class="{{ request()->routeIs('pedidos-delivery.*') ? 'active' : '' }}">Pedidos</a></li>
 
                         <li><a href="{{ route('produtos-delivery.categorias') }}" class="{{ request()->routeIs('produtos-delivery.categorias') ? 'active' : '' }}">Categorias de produto</a></li>
 
-                        <li><a href="{{ route('servico-marketplace.categorias') }}" class="{{ request()->routeIs('servico-marketplace.*') ? 'active' : '' }}">Categorias de serviÃ§o</a></li>
+                        <li><a href="{{ route('servico-marketplace.categorias') }}" class="{{ request()->routeIs('servico-marketplace.*') ? 'active' : '' }}">Categorias de serviço</a></li>
 
                         <li><a href="{{ route('produtos-delivery.index') }}" class="{{ request()->routeIs('produtos-delivery.index') ? 'active' : '' }}">Produtos</a></li>
 
-                        <li><a href="{{ route('servicos-marketplace.index') }}" class="{{ request()->routeIs('servicos-marketplace.*') ? 'active' : '' }}">ServiÃ§os</a></li>
+                        <li><a href="{{ route('servicos-marketplace.index') }}" class="{{ request()->routeIs('servicos-marketplace.*') ? 'active' : '' }}">Serviços</a></li>
 
                         <li><a href="{{ route('funcionamento-delivery.index') }}" class="{{ request()->routeIs('funcionamento-delivery.*') ? 'active' : '' }}">Funcionamento</a></li>
 
@@ -1954,7 +1954,7 @@
 
                         <li><a href="{{ route('pedido-cozinha.index') }}" class="{{ request()->routeIs('pedido-cozinha.*') ? 'active' : '' }}">Controle de pedidos</a></li>
 
-                        <li><a href="{{ route('impressao-pedido.index') }}" class="{{ request()->routeIs('impressao-pedido.*') ? 'active' : '' }}">Controle de impressÃ£o</a></li>
+                        <li><a href="{{ route('impressao-pedido.index') }}" class="{{ request()->routeIs('impressao-pedido.*') ? 'active' : '' }}">Controle de impressão</a></li>
 
                         <li><a href="{{ route('clientes-delivery.index') }}" class="{{ request()->routeIs('clientes-delivery.*') ? 'active' : '' }}">Clientes</a></li>
 
@@ -1984,7 +1984,7 @@
 
                     <ul class="side-nav-second-level">
 
-                        <li><a href="{{ route('config-ecommerce.index') }}" class="{{ request()->routeIs('config-ecommerce.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('config-ecommerce.index') }}" class="{{ request()->routeIs('config-ecommerce.*') ? 'active' : '' }}">Configuração</a></li>
 
                         <li><a href="{{ route('produtos-ecommerce.categorias') }}" class="{{ request()->routeIs('produtos-ecommerce.categorias') ? 'active' : '' }}">Categorias de produtos</a></li>
 
@@ -2016,7 +2016,7 @@
 
                     <ul class="side-nav-second-level">
 
-                        <li><a href="{{ route('mercado-livre-config.index') }}" class="{{ request()->routeIs('mercado-livre-config.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('mercado-livre-config.index') }}" class="{{ request()->routeIs('mercado-livre-config.*') ? 'active' : '' }}">Configuração</a></li>
 
                         <li><a href="{{ route('mercado-livre.produtos-news') }}" class="{{ request()->routeIs('mercado-livre.*') ? 'active' : '' }}">Produtos</a></li>
 
@@ -2046,7 +2046,7 @@
 
                     <ul class="side-nav-second-level">
 
-                        <li><a href="{{ route('woocommerce-config.index') }}" class="{{ request()->routeIs('woocommerce-config.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('woocommerce-config.index') }}" class="{{ request()->routeIs('woocommerce-config.*') ? 'active' : '' }}">Configuração</a></li>
 
                         <li><a href="{{ route('woocommerce-categorias.index') }}" class="{{ request()->routeIs('woocommerce-categorias.*') ? 'active' : '' }}">Categorias</a></li>
 
@@ -2076,7 +2076,7 @@
 
                     <ul class="side-nav-second-level">
 
-                        <li><a href="{{ route('nuvem-shop-config.index') }}" class="{{ request()->routeIs('nuvem-shop-config.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('nuvem-shop-config.index') }}" class="{{ request()->routeIs('nuvem-shop-config.*') ? 'active' : '' }}">Configuração</a></li>
 
                         <li><a href="{{ route('nuvem-shop-categorias.index') }}" class="{{ request()->routeIs('nuvem-shop-categorias.*') ? 'active' : '' }}">Categorias</a></li>
 
@@ -2106,11 +2106,11 @@
 
                     <ul class="side-nav-second-level">
 
-                        <li><a href="{{ route('ifood-config.index') }}" class="{{ request()->routeIs('ifood-config.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('ifood-config.index') }}" class="{{ request()->routeIs('ifood-config.*') ? 'active' : '' }}">Configuração</a></li>
 
-                        <li><a href="{{ route('ifood-config-loja.index') }}" class="{{ request()->routeIs('ifood-config-loja.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o da loja</a></li>
+                        <li><a href="{{ route('ifood-config-loja.index') }}" class="{{ request()->routeIs('ifood-config-loja.*') ? 'active' : '' }}">Configuração da loja</a></li>
 
-                        <li><a href="{{ route('ifood-catalogos.index') }}" class="{{ request()->routeIs('ifood-catalogos.*') ? 'active' : '' }}">CatÃ¡logos</a></li>
+                        <li><a href="{{ route('ifood-catalogos.index') }}" class="{{ request()->routeIs('ifood-catalogos.*') ? 'active' : '' }}">Catálogos</a></li>
 
                         <li><a href="{{ route('ifood-categoria-produtos.index') }}" class="{{ request()->routeIs('ifood-categoria-produtos.*') ? 'active' : '' }}">Categorias de Produto</a></li>
 
@@ -2142,12 +2142,12 @@
 
                     <ul class="side-nav-second-level">
 
-                        <li><a href="{{ route('vendizap-config.index') }}" class="{{ request()->routeIs('vendizap-config.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('vendizap-config.index') }}" class="{{ request()->routeIs('vendizap-config.*') ? 'active' : '' }}">Configuração</a></li>
 
                         <li><a href="{{ route('vendizap-categorias.index') }}" class="{{ request()->routeIs('vendizap-categorias.*') ? 'active' : '' }}">Categorias</a></li>
 
                         @can('variacao_view')
-                        <li><a href="{{ route('variacoes.index') }}" class="{{ request()->routeIs('variacoes.*') ? 'active' : '' }}">VariaÃ§Ãµes</a></li>
+                        <li><a href="{{ route('variacoes.index') }}" class="{{ request()->routeIs('variacoes.*') ? 'active' : '' }}">Variações</a></li>
                         @endcan
 
                         <li><a href="{{ route('vendizap-produtos.index') }}" class="{{ request()->routeIs('vendizap-produtos.*') ? 'active' : '' }}">Produtos</a></li>
@@ -2263,7 +2263,7 @@
 
                 <a data-bs-toggle="collapse" href="#sidebarVeiculos" aria-expanded="{{ request()->routeIs('veiculos.*') ? 'true' : 'false' }}" aria-controls="sidebarIcons" class="side-nav-link">
                     <i class="ri-roadster-line"></i>
-                    <span> VeÃ­culos </span>
+                    <span> Veículos </span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -2276,7 +2276,7 @@
                         @endcan
 
                         @can('veiculos_create')
-                        <li><a href="{{ route('veiculos.create') }}" class="{{ request()->routeIs('veiculos.create') ? 'active' : '' }}">Novo VeÃ­culo</a></li>
+                        <li><a href="{{ route('veiculos.create') }}" class="{{ request()->routeIs('veiculos.create') ? 'active' : '' }}">Novo Veículo</a></li>
                         @endcan
                     </ul>
                 </div>
@@ -2309,7 +2309,7 @@
                         @endcan
 
                         @can('manutencao_veiculo_view')
-                        <li><a href="{{ route('manutencao-veiculos.index') }}" class="{{ request()->routeIs('manutencao-veiculos.*') ? 'active' : '' }}">ManutenÃ§Ã£o de veÃ­culos</a></li>
+                        <li><a href="{{ route('manutencao-veiculos.index') }}" class="{{ request()->routeIs('manutencao-veiculos.*') ? 'active' : '' }}">Manutenção de veículos</a></li>
                         @endcan
                     </ul>
                 </div>
@@ -2320,17 +2320,17 @@
             <!-- fim transporte -->
 
             @if(__hasUtilitarios(Auth::user()->empresa))
-            <li class="side-nav-title">UTILITÃRIOS</li>
+            <li class="side-nav-title">UTILITÁRIOS</li>
             @endif
 
-            @if(__isActivePlan(Auth::user()->empresa, 'LocalizaÃ§Ãµes'))
+            @if(__isActivePlan(Auth::user()->empresa, 'Localizações'))
             @canany(['localizacao_view'])
 
             <li class="side-nav-item {{ request()->routeIs('localizacao.*') ? 'menuitem-active mm-active' : '' }}" id="step5">
 
                 <a data-bs-toggle="collapse" href="#sidebarLocalizacao" aria-expanded="{{ request()->routeIs('localizacao.*') ? 'true' : 'false' }}" aria-controls="sidebarIcons" class="side-nav-link">
                     <i class="ri-building-4-line"></i>
-                    <span>LocalizaÃ§Ãµes</span>
+                    <span>Localizações</span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -2364,7 +2364,7 @@
 
                         <li><a href="{{ route('crm.index') }}" class="{{ request()->routeIs('crm.*') ? 'active' : '' }}">Listar</a></li>
 
-                        <li><a href="{{ route('mensagem-padrao-crm.index') }}" class="{{ request()->routeIs('mensagem-padrao-crm.*') ? 'active' : '' }}">Mensagem padrÃ£o</a></li>
+                        <li><a href="{{ route('mensagem-padrao-crm.index') }}" class="{{ request()->routeIs('mensagem-padrao-crm.*') ? 'active' : '' }}">Mensagem padrão</a></li>
 
                         <li><a href="{{ route('mensagem-crm-logs.index') }}" class="{{ request()->routeIs('mensagem-crm-logs.*') ? 'active' : '' }}">Logs de Mensagem</a></li>
 
@@ -2393,7 +2393,7 @@
                     <ul class="side-nav-second-level">
 
                         @can('sped_config_view')
-                        <li><a href="{{ route('sped-config.index') }}" class="{{ request()->routeIs('sped-config.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('sped-config.index') }}" class="{{ request()->routeIs('sped-config.*') ? 'active' : '' }}">Configuração</a></li>
                         @endcan
 
                         @can('sped_create')
@@ -2413,7 +2413,7 @@
 
                 <a data-bs-toggle="collapse" href="#sidebarConfig" aria-expanded="{{ request()->routeIs('config.*', 'natureza-operacao.*', 'minhas-faturas.*', 'email-config.*', 'escritorio-contabil.*', 'config-geral.*', 'difal.*', 'cash-back-config.*', 'contigencia.*', 'sitef-config.*', 'scope-config.*', 'config-api.*', 'sintegra.*', 'item-pesagem-pdv.*', 'metas.*', 'impressoras-pedido.*', 'relatorio-xml-contador.*', 'mensagem-fiscal.*') ? 'true' : 'false' }}" aria-controls="sidebarIcons" class="side-nav-link">
                     <i class="ri-settings-4-fill"></i>
-                    <span>ConfiguraÃ§Ãµes</span>
+                    <span>Configurações</span>
                     <span class="menu-arrow"></span>
                 </a>
 
@@ -2426,7 +2426,7 @@
                         @endcan
 
                         @can('natureza_operacao_view')
-                        <li><a href="{{ route('natureza-operacao.index') }}" class="{{ request()->routeIs('natureza-operacao.*') ? 'active' : '' }}">Natureza de operaÃ§Ã£o</a></li>
+                        <li><a href="{{ route('natureza-operacao.index') }}" class="{{ request()->routeIs('natureza-operacao.*') ? 'active' : '' }}">Natureza de operação</a></li>
                         @endcan
 
                         @if(Auth::user()->empresa && Auth::user()->empresa->empresa->receber_com_boleto)
@@ -2434,19 +2434,19 @@
                         @endif
 
                         @can('email_config_view')
-                        <li><a href="{{ route('email-config.index') }}" class="{{ request()->routeIs('email-config.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o de email</a></li>
+                        <li><a href="{{ route('email-config.index') }}" class="{{ request()->routeIs('email-config.*') ? 'active' : '' }}">Configuração de email</a></li>
                         @endcan
 
                         @can('configuracao_crediario_view')
                         <li>
                             <a href="{{ route('configuracao-crediario.index') }}" class="{{ request()->routeIs('configuracao-crediario.*') ? 'active' : '' }}">
-                                ConfiguraÃ§Ã£o de crediÃ¡rio
+                                Configuração de crediário
                             </a>
                         </li>
                         @endcan
 
                         @can('escritorio_contabil_view')
-                        <li><a href="{{ route('escritorio-contabil.index') }}" class="{{ request()->routeIs('escritorio-contabil.*') ? 'active' : '' }}">EscritÃ³rio contÃ¡bil</a></li>
+                        <li><a href="{{ route('escritorio-contabil.index') }}" class="{{ request()->routeIs('escritorio-contabil.*') ? 'active' : '' }}">Escritório contábil</a></li>
                         @endcan
 
                         @can('emitente_view')
@@ -2462,13 +2462,13 @@
                         @endcan
 
                         @can('contigencia_view')
-                        <li><a href="{{ route('contigencia.index') }}" class="{{ request()->routeIs('contigencia.*') ? 'active' : '' }}">ContingÃªncia</a></li>
+                        <li><a href="{{ route('contigencia.index') }}" class="{{ request()->routeIs('contigencia.*') ? 'active' : '' }}">Contingência</a></li>
                         @endcan
 
                         @can('config_tef_view')
-                        <li><a href="{{ route('sitef-config.index') }}" class="{{ request()->routeIs('sitef-config.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o TEF SITEF</a></li>
+                        <li><a href="{{ route('sitef-config.index') }}" class="{{ request()->routeIs('sitef-config.*') ? 'active' : '' }}">Configuração TEF SITEF</a></li>
 
-                        <li><a href="{{ route('scope-config.index') }}" class="{{ request()->routeIs('scope-config.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o TEF SCOPE</a></li>
+                        <li><a href="{{ route('scope-config.index') }}" class="{{ request()->routeIs('scope-config.*') ? 'active' : '' }}">Configuração TEF SCOPE</a></li>
                         @endcan
 
                         @can('config_api')
@@ -2497,7 +2497,7 @@
                         @endcan
 
                         @can('metas_view')
-                        <li><a href="{{ route('metas.index') }}" class="{{ request()->routeIs('metas.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o de metas</a></li>
+                        <li><a href="{{ route('metas.index') }}" class="{{ request()->routeIs('metas.*') ? 'active' : '' }}">Configuração de metas</a></li>
                         @endcan
 
                         @can('impressora_pedido_view')
@@ -2535,11 +2535,11 @@
 
                         <li><a href="{{ route('contador-empresa.fornecedores') }}" class="{{ request()->routeIs('contador-empresa.fornecedores') ? 'active' : '' }}">Fornecedores</a></li>
 
-                        <li><a href="{{ route('contador-natureza-operacao.index') }}" class="{{ request()->routeIs('contador-natureza-operacao.*') ? 'active' : '' }}">Natureza de OperaÃ§Ã£o</a></li>
+                        <li><a href="{{ route('contador-natureza-operacao.index') }}" class="{{ request()->routeIs('contador-natureza-operacao.*') ? 'active' : '' }}">Natureza de Operação</a></li>
 
-                        <li><a href="{{ route('contador-produto-tributacao.index') }}" class="{{ request()->routeIs('contador-produto-tributacao.*') ? 'active' : '' }}">ConfiguraÃ§Ã£o PadrÃ£o Fiscal</a></li>
+                        <li><a href="{{ route('contador-produto-tributacao.index') }}" class="{{ request()->routeIs('contador-produto-tributacao.*') ? 'active' : '' }}">Configuração Padrão Fiscal</a></li>
 
-                        <li><a href="{{ route('contador.show') }}" class="{{ request()->routeIs('contador.show') ? 'active' : '' }}">ConfiguraÃ§Ã£o</a></li>
+                        <li><a href="{{ route('contador.show') }}" class="{{ request()->routeIs('contador.show') ? 'active' : '' }}">Configuração</a></li>
 
                     </ul>
 
